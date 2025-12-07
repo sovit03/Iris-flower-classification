@@ -5,14 +5,14 @@
 
 
 import pandas as pd
-
-
-# In[2]:
-
-
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
+
+import sklearn
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import classification_report, accuracy_score 
 
 
 # In[3]:
@@ -68,7 +68,7 @@ iris_df.describe()
 # In[15]:
 
 
-iris_df.groupby("class")["Iris-setosa"].describe()
+'''iris_df.groupby("class")["Iris-setosa"].describe()
 
 
 # In[16]:
@@ -106,13 +106,13 @@ iris_df[95:150]
 # In[26]:
 
 
-iris_df1.count()
+iris_df1.count()'''
 
 
 # In[27]:
 
 
-import sklearn
+
 
 
 # In[28]:
@@ -124,9 +124,7 @@ print(sklearn.__version__)
 # In[31]:
 
 
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import classification_report, accuracy_score 
+
 
 
 # In[33]:
