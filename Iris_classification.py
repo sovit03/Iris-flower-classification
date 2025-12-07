@@ -19,7 +19,7 @@ from sklearn.metrics import classification_report, accuracy_score
 
 
 url= "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
-iris_df = pd.read_csv(url)
+iris_df = pd.read_csv(url, header = None)
 
 
 # In[4]:
